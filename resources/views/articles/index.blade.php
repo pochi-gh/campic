@@ -1,9 +1,8 @@
 @extends('app')
 
 @section('title','記事一覧')
-
+@include('nav')
 @section('content')
-  @include('nav')
   <div class="container">
     @foreach($articles as $article)
       <!-- Card -->

@@ -12,7 +12,7 @@ class ArticleController extends Controller
       (object) [
         'id'         => 1,
         'title'      => 'タイトル1',
-        'image'      => '本文1',
+        'image'      => 'https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg',
         'created_at' => now(),
         'user'       => (object) [
           'id'       => 1,
@@ -22,7 +22,7 @@ class ArticleController extends Controller
       (object) [
         'id'         => 2,
         'title'      => 'タイトル2',
-        'image'      => '本文2',
+        'image'      => 'https://pbs.twimg.com/media/Elcidu5U8AAU8-s?format=jpg&name=large',
         'created_at' => now(),
         'user'       => (object) [
           'id'       => 2,
@@ -32,7 +32,7 @@ class ArticleController extends Controller
       (object) [
         'id'         => 3,
         'title'      => 'タイトル3',
-        'image'      => '本文3',
+        'image'      => 'https://pbs.twimg.com/media/ElaSeb-U0AELb97?format=jpg&name=large',
         'created_at' => now(),
         'user'       => (object) [
           'id'       => 3,

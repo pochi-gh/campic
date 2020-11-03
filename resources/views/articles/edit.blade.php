@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title','記事投稿')
+@section('title', '記事更新')
 
 @include('nav')
 
@@ -18,9 +18,10 @@
               @enderror
             </div>
             <div class="card-text">
-              <form method="POST" action="{{ route('articles.store') }}">
+              <form method="POST" action="{{ route('articles.update', ['article' => $article]) }}">
+                @method('PATCH')
                 @include('articles.form')
-                <button type="submit" class="btn blue-gradient btn-block">投稿する</button>
+                <button type="submit" class="btn blue-gradient btn-block">更新する</button>
               </form>
             </div>
           </div>

@@ -5,5 +5,5 @@
 </div>
 <div class="form-group">
   <label></label>
-  <textarea name="body" required class="form-control" rows="2" placeholder="画像のURL">{{ old('body') }}</textarea>
+  <textarea name="image" required class="form-control" rows="2" placeholder="画像のURL">{{ old('image') }}</textarea>
 </div>

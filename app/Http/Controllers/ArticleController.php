@@ -21,8 +21,7 @@ class ArticleController extends Controller
 
   public function store(ArticleRequest $request, Article $article)
   {
-    $article->title = $request->title;
-    $article->image = $request->image;
+    $article->fill($request->all());
     $article->user_id = $request->user()->id;
     $article->save();
     return redirect()->route('articles.index');

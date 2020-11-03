@@ -18,9 +18,9 @@
         <div class="card-body card-body-cascade text-center">
           <!-- Title -->
           <div class="d-flex flex-row">
-            <h4 class="card-title"><strong>
+            <h5 class="card-title">
               {{$article->title}}
-            </strong></h4>
+            </h5>
         @if( Auth::id() === $article->user_id )
         <!-- dropdown -->
         <div class="ml-auto card-text">
@@ -70,9 +70,6 @@
       @endif
         </div>
         <!-- Text -->
-        <p class="card-text">
-        本文
-        </p>
         <div class="font-weight-bold indigo-text py-2">
         {{$article->user->name}}
         {{ $article->created_at->format('Y/m/d H:i') }} {{--この行を変更--}}

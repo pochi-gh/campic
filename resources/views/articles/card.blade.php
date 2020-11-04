@@ -1,5 +1,5 @@
  <!-- Card -->
- <div class="card card-cascade wider reverse mt-3">
+ <div class="card card-cascade wider reverse mt-3 main-card">
   <div class="view view-cascade overlay">
     <img class="card-img-top" src="{{$article->image}}" alt="Card image cap" height="380" width="360">
     <a href="#!">
